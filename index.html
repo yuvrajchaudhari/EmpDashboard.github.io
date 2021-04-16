@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Emp Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-white navbar-light">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"><img src="images/Logo.png" alt="redbixbite"
+                        title="Redbixbite Pvt Ltd"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        
+               <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <form class="form-inline ml-auto" action="">
+                    <div class="input-group">
+                        <span class="header-search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" class="form-control search-input" style=" border-radius: 5px;"
+                            placeholder="Search" />
+                    </div>
+                </form>
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            <i class="fa fa-cog mt-3" style="font-size: 25px;" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            <div class="media border p-2">
+                                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="John Doe"
+                                    class="mr-3 rounded-circle" style="width:40px;">
+                                <div class="media-body mt-1">
+                                    <h5>John Doe</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Profile</a>
+                        </div>
+                    </li>
+
+                </ul>
+               </div>
+            </div>
+        </nav>
+    </header>
+    <section class="" style="background-color: #ebebeb;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card text-center box-shadow">
+                        <div class="card-header bg-white"><i class="fa fa-calendar" aria-hidden="true"></i> Timesheet
+                        </div>
+                        <div class="card-body dash-box">
+                            <p class="">
+                                Last Punch Out time<br>
+                                at 16April 7.10PM
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-primary">Punch In</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-primary">Punch Out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card text-center box-shadow">
+                        <div class="card-header bg-white"><i class="fa fa-sign-out" aria-hidden="true"></i> Leaves
+                        </div>
+                        <div class="card-body dash-box">
+                            <table class="table table-borderless mb-0">
+                                  <tr class="text-justify">
+                                    <td class="p-1"><b>Total</b></td>
+                                    <td class="p-1">22</td>
+                                  </tr>
+                                  <tr class="text-justify">
+                                    <td class="p-1"><b>Balance</b></td>
+                                    <td class="p-1">18</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary btn-rounded btn-lg"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center box-shadow">
+                        <div class="card-header bg-white"><i class="fa fa-money" aria-hidden="true"></i> Pay Slip
+                        </div>
+                        <div class="card-body dash-box">
+                            <table class="table table-borderless mb-0">
+                                  <tr class="text-justify">
+                                    <td class="p-1"><b>Additional</b></td>
+                                    <td class="p-1">$8</td>
+                                  </tr>
+                                  
+                                  <tr class="text-justify">
+                                    <td class="p-1"><b>Grautuity</b></td>
+                                    <td class="p-1">$10</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="row">
+                                <div class="col-10 m-auto">
+                                    <button type="button" class="btn btn-danger">Print </button>
+                              
+                                    <button type="button" class="btn btn-primary">Download</button>
+                                
+                                    <button type="button" class="btn btn-info">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-xl-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card box-shadow inbox-section">
+                        <div class="card-header bg-white">
+                            <div class="pull-right">
+                                <a target="_blank" href="https://mail.google.com/mail/u/1/#inbox?compose=new" class="btn g-btn"><img src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png" class="img-fluid" alt=""> &nbsp; Compose</a>
+                            </div>
+                            <div class="pt-2"><i class="fa fa-inbox" aria-hidden="true"></i> Inbox</div>
+                           
+                        </div>
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="John Doe" class="mr-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                  <h5>John Doe <span class="pull-right time-type"><i class="fa fa-paperclip" aria-hidden="true"></i> 10:00am</span><br><span class="pull-right"><i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+                                </div>
+                              </div>
+                            <div class="media">
+                                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="John Doe" class="mr-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                  <h5>Archana <span class="pull-right time-type"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>16 Apr</span><br><span class="pull-right"><i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                  <p>Invitation:Employee Dashboard You have been Invited for the data content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>      
+                                </div>
+                              </div>
+                            <div class="media">
+                                <img src="https://www.w3schools.com/bootstrap4/img_avatar6.png" alt="John Doe" class="mr-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                  <h5>Serena <span class="pull-right time-type"> 16 Apr</span><br><span class="pull-right"><i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>      
+                                </div>
+                              </div>
+                            <div class="media">
+                                <img src="https://www.w3schools.com/w3images/avatar2.png" alt="John Doe" class="mr-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                  <h5>Peter <span class="pull-right time-type"><i class="fa fa-paperclip" aria-hidden="true"></i> 15 Apr</span><br><span class="pull-right"><i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <iframe src="https://calendar.google.com/calendar/embed?src=1v92bj14uvhuipaeshc5cbb1tc%40group.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0" id="calendar" width="100%" height="512" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom-footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-6 col-12">
+                    <div class="copyright">
+                        <span>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> Developed by <a href="https://redbixbite.com/" style="color: #000000;"><span style="color:#e10c30;font-weight: 800;">Red</span> Bixbite Solutions Pvt Ltd.</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ul class="list-inline pull-right">
+                        <li class="list-inline-item"><a style="color: #000000;" href="privacy-policy.html">Privacy Policy</a></li>
+                        <!-- <li class="list-inline-item"><a href="#">News</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        $("#calendar").contents().find(".calendar-container").css('background-color', 'black');
+    </script>
+</body>
+
+</html>
