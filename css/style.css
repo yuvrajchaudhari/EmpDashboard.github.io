@@ -34,7 +34,18 @@ body{
 .dash-box{
         border: 10px solid #ebebeb;
 }
-
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    /* border-color: #80bdff; */
+    outline: 0;
+    box-shadow:none;
+}
+.border-profile{
+    border: 1px solid #dee2e6!important;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px #f3ecec;
+}
 .btn-rounded {
     font-size: 13px;
     letter-spacing: 1px;
@@ -116,7 +127,12 @@ body{
 
 
   @media (min-width: 1200px){
-.container{
-    max-width: 1340px;
-}
+    .container{
+        max-width: 1340px;
+    }
   }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+    .search-input {
+        width: 100%;
+    }
+}
