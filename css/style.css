@@ -6,6 +6,13 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.navbar-brand img{
+    width: 169px;
+}
+
+.dashboard-box{
+    height: 251px;
+}
 .header-search {
     position: absolute;
     margin-left: 17px;
