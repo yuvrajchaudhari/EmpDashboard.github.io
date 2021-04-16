@@ -135,10 +135,18 @@ body{
     .search-input {
         width: 100% !important;
     }
+    .btn{
+    padding: .375rem .2rem;
+    font-size: 13px;
+    white-space: nowrap;
+    line-height: 1;
+    }
 }
 
 @media(max-width:767px){
     .search-bar{
         display: none;
     }
+
+
 }
