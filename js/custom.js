@@ -6,7 +6,7 @@ var myChart = new Chart(ctx, {
         
         labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri'],
         datasets: [{
-            label: 'Daily Timesheet',
+            label: 'Daily Timesheet (hours)',
             data: [8, 12, 9, 6, 9],
             backgroundColor: [
                 'rgba(255, 99, 132,1)',
